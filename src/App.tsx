@@ -11,7 +11,7 @@ import Card from './components/Card/Card';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className="first-section">
       <Header />
       <Hero />
       <section className="product">

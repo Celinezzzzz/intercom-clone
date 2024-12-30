@@ -1,1 +1,58 @@
-/*# sourceMappingURL=Header.css.map */
+.header {
+  background-image: url(../assets/images/hero-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav__container-links, .nav__container-actions {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .nav__container-links, .nav__container-actions {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 5px 10px;
+  }
+}
+.nav__icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+.nav__list {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .nav__list {
+    display: flex;
+    gap: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav__link {
+    color: #17100E;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 10px 10px;
+    border-radius: 6px;
+  }
+  .nav__link:hover {
+    background-color: #E1E1E1;
+  }
+  .nav__link--button {
+    background-color: #17100E;
+    color: #FFFFFF;
+  }
+  .nav__link--button:hover {
+    transform: translate(5px, -5px);
+  }
+}/*# sourceMappingURL=Header.css.map */

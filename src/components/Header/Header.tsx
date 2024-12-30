@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         </div>
         <div className="nav__container-actions">
           <a className="nav__icon nav__icon--hidden" href="#">
-            <img src="./assets/images/icon-2.jpg" alt="icon-2" />
+            <img src="/src/assets/images/icon-2.jpg" alt="icon-2" />
           </a>
           <ul className="nav__list">
             <li className="nav__item"><a href="#" className="nav__link">Contact sales</a></li>
