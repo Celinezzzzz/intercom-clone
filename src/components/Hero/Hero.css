@@ -33,36 +33,4 @@
     align-self: center;
     width: 50%;
   }
-}
-.hero__button-container .button {
-  width: 100%;
-  padding: 0.875rem 1.5rem;
-  border-radius: 7px;
-  font-size: 16px;
-  color: #FFFFFF;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-@media (min-width: 760px) {
-  .hero__button-container .button {
-    padding: 0.5rem 0.5rem;
-  }
-}
-.hero__button-container .button--outline {
-  border: 2px solid #FFFFFF;
-  background: transparent;
-}
-.hero__button-container .button--outline:hover {
-  background-color: #FFFFFF;
-  color: #17100E;
-}
-.hero__button-container .button--primary {
-  background-color: #17100E;
-  position: relative;
-}
-.hero__button-container .button--primary:hover {
-  transform: translate(5px, -5px);
 }/*# sourceMappingURL=Hero.css.map */
