@@ -1,6 +1,6 @@
 @use "variables" as *;
 
-@mixin font-settings($size, $height, $weight) {
+@mixin font-settings($size, $height, $weight: $font-weight-regular) {
     font-size: $size;
     line-height: $height;
     font-weight: $weight;
@@ -17,4 +17,69 @@
     @media (min-width: $desktop-width){
         @content;
     }
+}
+
+
+// banner title
+@mixin h1-style {
+    @include font-settings(40px, 36px, $font-weight-bold); 
+  
+    @include tablet {
+      @include font-settings(2.5rem, 40px, $font-weight-bold); 
+    }
+}
+
+// card title 
+@mixin h2-style {
+    @include font-settings(16px, 20px, $font-weight-bold); 
+
+
+    @include desktop {
+        @include font-settings(18px, 40px, $font-weight-bold); 
+      }
+}
+
+// button text and nav text
+@mixin label1-style {
+    @include font-settings(16px, 20px, $font-weight-medium); 
+  
+    @include tablet {
+      @include font-settings(14px, 40px, $font-weight-medium); 
+    }
+}
+
+// learn more
+@mixin label2-style {
+    @include font-settings(16px, 20px, $font-weight-bold); 
+
+
+    @include desktop {
+        @include font-settings(18px, 40px, $font-weight-bold); 
+      }
+}
+
+// banner description
+@mixin p1-style {
+    @include font-settings(19px, 20px, $font-weight-regular); 
+  
+    @include tablet {
+      @include font-settings(22px, 40px, $font-weight-regular); 
+    }
+
+    @include desktop {
+        @include font-settings(25px, 40px, $font-weight-regular); 
+      }
+}
+
+// card description
+@mixin p2-style {
+    @include font-settings(22px, 20px, $font-weight-medium); 
+  
+    @include tablet {
+      @include font-settings(28px, 40px, $font-weight-medium); 
+    }
+
+    @include desktop {
+        @include font-settings(30px, 40px, $font-weight-medium); 
+      }
 }
