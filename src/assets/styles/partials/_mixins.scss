@@ -1,0 +1,20 @@
+@use "variables" as *;
+
+@mixin font-settings($size, $height, $weight) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+  }
+
+
+@mixin tablet {
+    @media (min-width: $tablet-width){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop-width){
+        @content;
+    }
+}
