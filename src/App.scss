@@ -12,3 +12,22 @@
     color: $white;
       
   }
+
+  // product section
+.product{
+  padding: 2rem 1rem;
+
+  .card-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+
+
+      @include tablet{
+          flex-direction: row;
+          // align-self: center;
+      }
+  }
+}
