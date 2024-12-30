@@ -1,5 +1,6 @@
 import React from 'react';
-import './Hero.scss'; // Create and link this file
+import './Hero.scss'; 
+import Button from '../Button/Button'; 
 
 const Hero: React.FC = () => {
   return (
@@ -11,8 +12,8 @@ const Hero: React.FC = () => {
         </p>
       </div>
       <div className="hero__button-container">
-        <button className="button button--outline">View demo</button>
-        <button className="button button--primary">Start free trial</button>
+        <Button label="View demo" type="outline" onClick={() => console.log('View demo clicked')} />
+        <Button label="Start free trial" type="primary" onClick={() => console.log('Start free trial clicked')} />
       </div>
     </section>
   );

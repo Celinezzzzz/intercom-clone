@@ -9,7 +9,7 @@ type ButtonProps = {
 
 const Button: React.FC<ButtonProps> = ({ label, type, onClick }) => {
   return (
-    <button className={`button button--${type}`} onClick={onClick}>
+    <button className={`button button button--${type}`} onClick={onClick}>
       {label}
     </button>
   );
