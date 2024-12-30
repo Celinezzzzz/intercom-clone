@@ -1,1 +1,32 @@
-/*# sourceMappingURL=Button.css.map */
+.button {
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  border-radius: 7px;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 760px) {
+  .button {
+    padding: 0.5rem 0.5rem;
+  }
+}
+.button--outline {
+  border: 2px solid #FFFFFF;
+  background: transparent;
+}
+.button--outline:hover {
+  background-color: #FFFFFF;
+  color: #17100E;
+}
+.button--primary {
+  background-color: #17100E;
+  position: relative;
+}
+.button--primary:hover {
+  transform: translate(5px, -5px);
+}/*# sourceMappingURL=Button.css.map */
