@@ -1,0 +1,44 @@
+@use '../../assets/scss/variables' as *;
+@use '../../assets/scss/mixins' as *;
+
+// hero-banner section
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  
+    &__text-container {
+      margin-bottom: 4rem;
+      padding: 0 1rem;
+
+      @include tablet{
+        width: 70%;
+      }
+  
+      .hero__title {
+        font-size: 2.7rem;
+        margin-top: 8rem;
+      }
+  
+      .hero__description {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem;
+
+        @include tablet{
+            flex-direction: row;
+            width: 50%;
+        }
+      }
+}
