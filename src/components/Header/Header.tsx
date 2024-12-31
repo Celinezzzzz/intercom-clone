@@ -24,7 +24,7 @@ const Header: React.FC = () => {
             <li className="nav__item"><a href="#" className="nav__link">Contact sales</a></li>
             <li className="nav__item"><a href="#" className="nav__link">Sign in</a></li>
             <li className="nav__item"><a href="#" className="nav__link">View demo</a></li>
-            <li className="nav__item"><a href="#" className="nav__link nav__link--button">Start free trial</a></li>
+            <li className="nav__item"><a href="#" className="nav__link nav__link--button"><span>Start free trial</span></a></li>
           </ul>
         </div>
       </nav>

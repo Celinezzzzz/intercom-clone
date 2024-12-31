@@ -6,19 +6,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   
     &__text-container {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2rem;
-        padding: 0 7rem;
+      margin-bottom: 4rem;
+      padding: 0 1rem;
+
+      @include tablet{
+        width: 70%;
+      }
   
       .hero__title {
         font-size: 2.7rem;
-        margin-bottom: 1rem;
-        margin-top: 4rem;
+        margin-top: 8rem;
       }
   
       .hero__description {
@@ -29,14 +31,13 @@
     &__button-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         width: 100%;
         gap: 0.5rem;
-        align-items: stretch;
 
         @include tablet{
             flex-direction: row;
-            align-self: center;
             width: 50%;
         }
       }

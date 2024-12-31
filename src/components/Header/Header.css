@@ -2,14 +2,21 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 .nav__container-links, .nav__container-actions {
-  display: flex;
-  align-items: center;
+  cursor: pointer;
 }
 @media (min-width: 1200px) {
   .nav__container-links, .nav__container-actions {
     background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border-radius: 8px;
     padding: 5px 10px;
   }
@@ -17,7 +24,13 @@
 .nav__icon img {
   width: 40px;
   height: 40px;
+  border: 3px solid #FFFFFF;
   border-radius: 8px;
+}
+@media (min-width: 1200px) {
+  .nav__icon--hidden {
+    display: none;
+  }
 }
 .nav__list {
   display: none;
@@ -31,19 +44,44 @@
 @media (min-width: 1200px) {
   .nav__link {
     color: #17100E;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 1rem;
     padding: 10px 10px;
     border-radius: 6px;
+    position: relative;
+    overflow: hidden;
   }
   .nav__link:hover {
     background-color: #E1E1E1;
   }
   .nav__link--button {
-    background-color: #17100E;
     color: #FFFFFF;
+    z-index: 1;
+    position: relative;
+    background: linear-gradient(90deg, #ff0080, #ffcd00, #00ff6a, #008cff);
   }
-  .nav__link--button:hover {
-    transform: translate(5px, -5px);
+  .nav__link--button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #17100E;
+    border-radius: 7px;
+    z-index: 0;
+    transition: transform 0.3s ease;
+  }
+  .nav__link--button:hover::after {
+    transform: translate(3px, -3px);
+  }
+  .nav__link--button span {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  .nav__link--button:hover span {
+    transform: translate(3px, -3px);
   }
 }/*# sourceMappingURL=Header.css.map */
