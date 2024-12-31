@@ -12,8 +12,8 @@ const Card: React.FC<CardProps> = ({ title, description, imgSrc, alt }) => {
   return (
     <div className="card">
       <div className="card__content">
-        <div className="card_header">
-            <h2 className="card__title">{title}</h2>
+        <div className="card__header">
+            <div className="card__title">{title}</div>
             <a className="card__link card__link--upper" href="#">Learn more</a>
         </div>
         <p className="card__description">{description}</p>
